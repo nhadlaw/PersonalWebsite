@@ -1,0 +1,22 @@
+
+body {
+    background-color: black
+}
+#logo-in-black {
+    position: absolute;
+    float: right;
+    right: 15px;
+    bottom: 15px;
+    width: 110px;
+    height: 110px;
+
+}
+.FrontPageName {
+    width: 50%;
+    height: 99%;
+}
+img {
+    width: 100%;
+    height: 100%;
+  }
+
