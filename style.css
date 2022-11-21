@@ -23,8 +23,9 @@ body {
 }
 .FrontPageName {
     float: right;
-    width: 50%;
-    height: 69%;
+    width: 40%;
+    height: 60%;
+    margin-right: 60px;
 }
 img {
     width: 100%;
@@ -35,8 +36,8 @@ img {
     position: relative;
     top: -100px;
     left: -20px;
-    width: 50%;
-    height: 90%;
+    width: 45%;
+    height: 75%;
     opacity: .5;
     /* Add the blur effect */
 }
