@@ -15,15 +15,15 @@ body {
     float: left;
     margin-top: 5%;
     margin-left: 15px;
-    width:30%;
-    height:50%;
+    width:20%;
+    height:45%;
     opacity:.6;
     border-radius: 40px;
     
 }
 .FrontPageName {
     float: right;
-    width: 30%;
+    width: 50%;
     height: 69%;
 }
 img {
@@ -32,7 +32,11 @@ img {
   }
 
 #nelly-richae-vid{
-    width: 500px;
-    height: 500px;
-    opacity: .6
+    position: relative;
+    top: -100px;
+    left: -20px;
+    width: 50%;
+    height: 90%;
+    opacity: .5;
+    /* Add the blur effect */
 }
