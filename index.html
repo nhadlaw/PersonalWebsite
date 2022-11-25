@@ -7,6 +7,7 @@
     <title>My Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   </head>
   <body>
     <main>
@@ -26,23 +27,31 @@
       </div>
 
           <div class="athlete-page">
-            <!--<h1 id="athlete-page-title">ATHLETE</h1>-->
+            <div class="athlete-page-header">
+              <h1 class="ml3">ATHLETE</h1>
+            </div>
+            <!--<h1 class="ml3">ATHLETE</h1>-->
             <div class="athlete-container">
                <div class="header1-container">
                 <img src="Kayak2.jpg" alt="Kayaking" id="athlete-page-kayak">
                 <img src="Dive2.jpg" alt="Diving" id="athlete-page-dive">
                 <img src="Running.jpg" alt="Running" id="athlete-page-running">
                </div>
-                <video  id="athlete-vid" controls>
-                  <source src="AthletePageVideo2.mp4" type="video/mp4">
-                </video>
+               <div class="athlete-vid-container">
+                  <video  id="athlete-vid" autoplay loop muted playsinline style="pointer-events: none;"\>
+                    <source src="AthletePageVideo2.mp4" type="video/mp4">
+                  </video>
+                  <div id="athlete-page-quote1"> </div>
+               </div>
 
                 <div class="header2-container">
                   <div id="background-box">
-                    <div id="rotate-background-box-text">
-                      <text id="background-box-text">
-                        
-                      </text>
+                    <div class="background-text-animation">
+                      <span class="background-text-wrapper">
+                            <span id="letters">
+                             
+                            </span>
+                      </span>
                     </div>
                   </div>
                   <div id="current-box">
@@ -55,6 +64,7 @@
                   <div id="plans-box">
                   </div>
                   <img src="UpsideDown2.png" alt="UpsideDown" id="athlete-page-upside-down">
+                  <!--<img src="LiveActive.png" alt="LiveActive" id="athlete-page-live-active">-->
 
                 </div>
             </div>

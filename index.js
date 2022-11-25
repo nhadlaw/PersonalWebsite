@@ -2,20 +2,20 @@ const increased_athlete_photo_width = "91%";
 const reg_athlete_photo_width = "90%";
 
 const info_box_minimized_size = "5%";
-const increased_background_box_width = "50%";
+const increased_background_box_width = "60%";
 const increased_background_box_height = "50%";
 const reg_background_box_width = "20%";
-const reg_background_box_height = "15%";
+const reg_background_box_height = "20%";
 
 const increased_current_box_width = "65%";
 const increased_current_box_height = "40%";
 const reg_current_box_width = "20%";
-const reg_current_box_height = "30%";
+const reg_current_box_height = "40%";
 
 const increased_plans_box_width = "95%";
 const increased_plans_box_height = "17%";
 const reg_plans_box_width = "20%";
-const reg_plans_box_height = "15%";
+const reg_plans_box_height = "18%";
 const background_box_text = 
 `<div id="rotate-background-box-text">
               <text id="background-box-text">
@@ -23,27 +23,20 @@ const background_box_text =
               </text>
 </div>`
 
-/*
-var opacity = 0;
-var intervalID = 0;
-window.onload = fadeIn;
+// Wrap every letter in a span
+// Wrap every letter in a span
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml3');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-function fadeIn() {
-    setInterval(show, 75);
-}
-
-function show() {
-    var body = document.getElementById("athlete-page-title");
-    opacity = Number(window.getComputedStyle(body)
-                        .getPropertyValue("opacity"));
-    if (opacity < 1) {
-        opacity = opacity + 0.1;
-        body.style.opacity = opacity
-    } else {
-        clearInterval(intervalID);
-    }
-}*/
-
+anime.timeline({loop: false})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 2250,
+    delay: (el, i) => 150 * (i+1)
+  });
 //KAYAK EVENT LISTENERS
 var athlete_kayak = document.getElementById("athlete-page-kayak");
 
@@ -114,7 +107,7 @@ background_box.addEventListener("mouseover",
     function() {
         background_box.style.width = increased_background_box_width;
         background_box.style.height = increased_background_box_height;
-        background_box.innerHTML = background_box_text;
+        //background_box.innerHTML = background_box_text;
         current_box.style.height = info_box_minimized_size;
         plans_box.style.height = info_box_minimized_size;
         current_box.style.width = increased_background_box_width;
@@ -126,7 +119,7 @@ background_box.addEventListener("mouseout",
     function() {
         background_box.style.width = reg_background_box_width;
         background_box.style.height = reg_background_box_height;
-        background_box.innerHTML = "";
+        //background_box.innerHTML = "";
         current_box.style.height = reg_current_box_height;
         plans_box.style.height = reg_plans_box_height;
         current_box.style.width = reg_current_box_width;
