@@ -59,10 +59,14 @@ img {
     align-items: center;
     flex: 3;
 }
-
+.athlete-page-img {
+    background-image: url("./Background3.jpg");
+    height: 70%;
+    width: 100%;
+    opacity: 1;
+}
 #athlete-page-title {
     flex: 1;
-    color: white;
     text-align: center;
     opacity: 0;
 }
@@ -151,7 +155,7 @@ img {
 }
 .ml3 {
     text-align: center;
-    color: black;
+    color: white;
     letter-spacing: 12px;
     font-weight: 900;
     font-size: 3.5em;
@@ -224,7 +228,6 @@ img {
     position: relative;
     top: 20%;
     left: -10%;
-    background-color: white;
     width: 130%;
     height: 140px;
     margin-bottom: 10px;
