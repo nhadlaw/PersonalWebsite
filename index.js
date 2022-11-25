@@ -4,17 +4,17 @@ const reg_athlete_photo_width = "90%";
 const info_box_minimized_size = "5%";
 const increased_background_box_width = "60%";
 const increased_background_box_height = "50%";
-const reg_background_box_width = "20%";
+const reg_background_box_width = "30%";
 const reg_background_box_height = "20%";
 
 const increased_current_box_width = "65%";
 const increased_current_box_height = "40%";
-const reg_current_box_width = "20%";
+const reg_current_box_width = "30%";
 const reg_current_box_height = "40%";
 
 const increased_plans_box_width = "95%";
 const increased_plans_box_height = "17%";
-const reg_plans_box_width = "20%";
+const reg_plans_box_width = "30%";
 const reg_plans_box_height = "18%";
 const background_box_text = 
 `<div id="rotate-background-box-text">
