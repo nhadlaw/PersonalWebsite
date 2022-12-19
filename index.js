@@ -26,7 +26,7 @@ const background_box_text =
 // Wrap every letter in a span
 // Wrap every letter in a span
 // Wrap every letter in a span
-var textWrapper = document.querySelector('.ml3');
+/*var textWrapper = document.querySelector('.ml3');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 anime.timeline({loop: false})
@@ -159,4 +159,4 @@ plans_box.addEventListener("mouseout",
         plans_box.style.width = reg_plans_box_width;
         plans_box.style.height = reg_plans_box_height;
     }
-)
+)*/
