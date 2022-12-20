@@ -10,6 +10,8 @@ body {
     width: 100%;
     
 }
+a:link { text-decoration: none; }
+a:visited { color: white; }
 #main-page-contents{
     height: 100%;
 }
@@ -32,6 +34,9 @@ body {
 #front-page-name {
     transition: 1s;
 }
+#button-header {
+    color: white;
+}
 #front-page-buttons {
     position: relative;
     top: 5%;
@@ -44,7 +49,6 @@ body {
     border-width: 10px;
     position: relative;
     left: 10%;
-    top: 10%;
     display: inline-flex;
     margin-left: 10px;
     width: 12%;
@@ -65,34 +69,34 @@ body {
 .SWE-button{
    border-color: #F01D7F;
    background-color: black;
-   text-shadow: -1px 0 #F01D7F, 0 .5px #F01D7F, 1px 0 #F01D7F, 0 -1px black;
+   text-shadow: -1px 0 #F01D7F, 0 .5px #F01D7F, 1px 0 #F01D7F, 0 -1px white;
    opacity: 1;
-   color: black;
+   color: white;
    
 }
 
 .Artist-button{
     border-color: #FDDA0D;
     background-color: black;
-    text-shadow: -1px 0 #FDDA0D, 0 .5px #FDDA0D, 1px 0 #FDDA0D, 0 -1px black;
+    text-shadow: -1px 0 #FDDA0D, 0 .5px #FDDA0D, 1px 0 #FDDA0D, 0 -1px white;
     opacity: 1;
-    color: black;
+    color: white;
 
  }
  .Athlete-button {
      
     border-color: aquamarine;
     background-color: black;
-    text-shadow: -1px 0 aquamarine, 0 .5px aquamarine, 1px 0 aquamarine, 0 -1px black;
+    text-shadow: -1px 0 aquamarine, 0 .5px aquamarine, 1px 0 aquamarine, 0 -1px white;
     opacity: 1;
-    color: black;
+    color: white;
  }
  .Extrovert-button {
     border-color: #0096FF;
     background-color: black;
     text-shadow: -1px 0 #0096FF, 0 .5px #0096FF, 1px 0 #0096FF, 0 -1px black;
     opacity: 1;
-    color: black;
+    color: white;
  }
 img {
     width: 100%;

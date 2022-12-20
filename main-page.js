@@ -11,7 +11,7 @@ const main_page_btn_reg_br = '120px'; //regular border-radius
 
 
 const reg_btn_font_size = '3vw';
-const decreased_btn_font_size = '2vw';
+const decreased_btn_font_size = '4vw';
 
 
 const swe_button = document.querySelector('.SWE-button');
@@ -42,7 +42,7 @@ const new_buttons = main_page_buttons.map(curr_button => {
             curr_button.style.opacity = '1';
             curr_button.style.fontSize = decreased_btn_font_size;
             
-            curr_button.innerHTML = class_to_description[curr_button.className];
+            //curr_button.innerHTML = class_to_description[curr_button.className];
             curr_button.style.height = increased_btn_height;
         
             /*for (let i = 0; i < main_page_buttons.length; i++) {
@@ -56,7 +56,7 @@ const new_buttons = main_page_buttons.map(curr_button => {
         
         curr_button.addEventListener('mouseout', function (event){
             curr_button.style.width = main_page_btn_reg_width;
-            curr_button.innerHTML = class_to_name[curr_button.className];
+            //curr_button.innerHTML = class_to_name[curr_button.className];
             curr_button.style.height = main_page_btn_reg_height;
             curr_button.style.opacity = '1';
             curr_button.style.fontSize = reg_btn_font_size;
