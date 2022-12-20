@@ -14,7 +14,7 @@ body{
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
     ),
-    url('AthletePageHeader.jpg');
+    url('ExtrovertHeader2.jpg');
     /*url('Dive2.jpg');*/
   background-size: cover;
   width: 100%;
@@ -30,27 +30,7 @@ body{
   margin: 0;
   position: absolute;
   top: 50%;
-  left: 70%;
+  left: 40%;
   font-size: 5rem;
   transform: translate(-50%, -50%);
-}
-.module-mid::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: MidnightBlue;
-  opacity: 0.3;
-}
-
-
-.sample-section {
-  color: white;
-  position: relative;
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 40px;
 }

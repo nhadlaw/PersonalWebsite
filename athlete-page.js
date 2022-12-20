@@ -1,9 +1,14 @@
-/*anime.timeline({loop: false})
-  .add({
-    targets: '.ml15 .word',
-    scale: [14,1],
-    opacity: [0,1],
-    easing: "easeOutCirc",
-    duration: 800,
-    delay: (el, i) => 800 * i
-  });*/
+function parallax_height() {
+  var scroll_top = $(this).scrollTop();
+  var sample_section_top = $(".athlete-section").offset().top;
+  var header_height = $(".athlete-header-section").outerHeight();
+  $(".athlete-section").css({ "margin-top": header_height });
+  $(".athlete-header").css({ height: header_height - scroll_top });
+}
+parallax_height();
+$(window).scroll(function() {
+  parallax_height();
+});
+$(window).resize(function() {
+  parallax_height();
+});
